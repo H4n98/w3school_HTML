@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link</title>
+    <style>
+        .bg_color{
+            
+            display: inline;background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 ><span style="background-color: cornflowerblue;"><b>how to use links</b></span></h1>
+    
+    <div class="bg_color">
+        we use 4 attribute of link elements: <br>
+        self is defualt and open link the same page <br>
+        blank: open link in another page <br>
+        top: opens the link in the full body of the window, replacing any frames. <br>
+        parent: opens the link in the parent frame. <br>
+    </div>
+    
+    <a style="color: brown;" href="https://google.com" target="_self">_self</a> <br>
+    <a style="color: sienna;" href="https://google.com" target="_blank">_blank</a> <br>
+    <a style="color: deeppink;" href="https://google.com" target="_top">_top</a> <br>
+    <a style="color: black;" href="https://google.com" target="_parent">_parent</a> <br>
+    
+    <p>Relative URLs:</p>
+    <a href="test.html" target="_blank">test.html</a> <br>
+    <a href="form.html" target="_blank">form.html</a> <br>
+
+    <p>Absoulute URLs:</p>
+    <a href="https://google.com" target="_blank">google</a> <br>
+    <a href="https://wikipedia.com" target="_blank">wikipedia</a> <br>
+
+    <pre style=" background-color: cadetblue; font-size: 130%;" dir="rtl">خلاصه ای از محتویات بالا: 
+        چهار لینک اول به ویژگی تارگت در تگ a اشاره دارند 
+        دو لینک رلتیو: سورس آن ها بصورت لوکال در خود کامپیوتر قرار دارد.
+        دو لینک ابسولوت: سورس ان ها در اینترنت قرار دارد و کپی شده و در قسمت href قرار داده شده است.
+    </pre>
+    <hr>
+    <p>use img as a link:</p> <br>
+
+    <a href="https://google.com"><img style="margin-left: 50%;" width="70px" height="70px" src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="google image"></a>
+    <pre>as you can see when you click on the G logo thats redirect you to google.com page</pre>
+    <hr>
+
+    <p style="margin-left: 5%;"><b>mailto</b> attribute to open the mail program of user:</p>
+    <a href="mailto:someone@mail.com">mail Address</a>
+
+
+
+</body>
+</html>
