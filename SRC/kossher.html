@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>maxgaming.ir</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css">
+
 <style>
     body {
         direction: rtl; 
         text-align: right;
-        font-family: Arial, sans-serif;
-        background-color: #f4f6f8;
+        background-color: #5984af;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,6 +18,9 @@
     form {
         /* direction: rtl; 
         text-align: right;" */
+        font-family: vazir;
+        font-size: small;
+        font-weight: bold;
         background: #fff;
         padding: 20px 25px;
         border-radius: 10px;
@@ -35,11 +39,12 @@
         color: #555;
     }
     input, select, textarea, button {
+        font-weight: bold;
         width: 100%;
         padding: 8px;
         margin-top: 5px;
         border: 1px solid #ccc;
-        border-radius: 5px;
+        border-radius: 10px;
         font-size: 14px;
     }
     input[type="radio"],
@@ -74,49 +79,48 @@
 <body>
 
 <form>
-    <h2>فرم ادمینی مکس گیمینگ</h2>
+    <h2>ثبتنام آزمون استخدامی</h2>
 
-    <label for="name">نام</label>
-    <input type="text" name="name" id="name" placeholder="چی صدات میکنن کسکش">
+    <label for="name">نام و نام خانوادگی</label>
+    <input type="text" name="name" id="name" placeholder="نام">
 
-    <label for="lname">نام پدران</label>
-    <input type="text" name="last-name" id="lname" placeholder="اسم باباهاتو وارد کن">
+    <!-- <label for="lname"س>نام خانوادگی</label> -->
+    <input type="text" name="last-name" id="lname" placeholder="نام خانوادگی">
 
-    <label><strong>کدوم تخمو بیشتر میمالید؟</strong></label>
+    <label><strong> راست دست یا چپ دست:</strong></label>
     <div class="inline-options">
-        <input type="radio" name="gender" value="male" checked> تخم چپ
-        <input type="radio" name="gender" value="woman"> تخم راست
+        <input type="radio" name="gender" value="male" checked> راست دست
+        <input type="radio" name="gender" value="woman"> چپ دست
     </div>
 
-    <label for="phNum">شماره بکنتو بنویس</label>
-    <input type="text" name="phone" id="phNum" placeholder="اینجا وارد کن کسخل">
+    <label for="phNum">شماره تماس:</label>
+    <input type="text" name="phone" id="phNum" placeholder="شماره تماس">
 
-    <label for="email">عکس کون دادنتو کجا بفرستم؟</label>
+    <label for="email">پست الکترونیک(همان نام کاربری شما میباشد)</label>
     <input type="email" name="email" id="email" placeholder="Email@example.com">
 
-    <label for="pwd">رمز کونتو بزن</label>
-    <input type="password" name="password" id="pwd" placeholder="رمز کون">
+    <label for="pwd">یک رمز برای حساب خود بسازید:</label>
+    <input type="password" name="password" id="pwd" placeholder="رمز عبور">
 
-    <label><strong>معمولا دوست دارید خایه چه کسانی را بمالید؟امکان انتخاب چند گزینه هم وجود دارد</strong></label>
+    <label><strong>به چه زبان هایی مسلط هستید</strong></label>
     <div class="inline-options">
-        <input type="checkbox" name="langs" value="py"> اونر
-        <input type="checkbox" name="langs" value="java"> ادمین ها
-        <input type="checkbox" name="langs" value="php"> پلیرها
+        <input type="checkbox" name="langs" value="py"> JavsScript
+        <input type="checkbox" name="langs" value="java"> Python
+        <input type="checkbox" name="langs" value="php"> PHP
     </div>
 
-    <label for="marri"><strong>ایا تا به حال کون داده اید؟</strong></label>
+    <label for="marri"><strong>وضعیت تاهل</strong></label>
     <select id="marri" name="marital-status">
-        <option value="bachelor">بله داده ام</option>
-        <option value="married">دوست دارم بدهم</option>
+        <option value="bachelor">مجرد</option>
+        <option value="married">متاهل</option>
     </select>
 
-    <label for="info">یک خاطره از خایه مالی خود را تعریف کنید</label>
-    <textarea id="info" name="info" rows="4" placeholder="بنویس خایه مال"></textarea>
+    <label for="info">بصورت خلاصه در چند خط خود را تعریف کنید</label>
+    <textarea id="info" name="info" rows="4" placeholder="شرح حال"></textarea>
 
     <div class="btn-container">
-        <input type="submit" value="Send">
-        <button type="submit">Submit Button</button>
-    </div>
+        <!-- <input type="submit" value="Send"> -->
+        <button type="submit">ارسال
 </form>
 
 </body>
