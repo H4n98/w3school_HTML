@@ -5,12 +5,68 @@
 <head>
     <title>Table</title>
 </head>
+<style>
+
+    table {
+        border-radius: 10px;
+        width: 40%;
+        height: 5em;
+        padding: 2px;
+        margin-top: 5%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        overflow: hidden;
+        text-align: center;
+        font-weight: bold;
+        border-spacing: 10px;
+        margin: auto;
+        box-shadow: 5px 5px 10px black;
+    }
+    th {
+        border: 2px solid black;
+        background-color: rgb(28, 159, 115);
+        height: 50px;
+    }
+    td {
+        border: 2px solid black;
+        background-color: rgb(194, 130, 47);
+    }
+    body {
+        
+        background-color: rgba(0, 0, 0, 0.367);
+        direction: rtl;
+    }
+    caption {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: white;
+        text-shadow: 3px 3px 5px black;
+    }
+</style>
 
 <body>
 
-    <table>
-
-
+    <table >
+        <caption>لیست نمرات</caption>
+        <colgroup>
+        <col span="1" style="background-color: black;">
+        </colgroup>
+        <tr>
+            <th colspan="2">نام و نام خانوداگی</th>
+            <th>نمره</th>
+        </tr>
+        <tr>
+            <td>علی</td>
+            <td>احمدی</td>
+            <td>۱۱</td>
+        </tr>
+        <tr>
+            <td>حسن</td>
+            <td>شماعی زاده</td>
+            <td>۱۵</td>
+        </tr>
+        
 
     </table>
 
