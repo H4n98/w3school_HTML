@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable table</title>
+    <style>
+        table{
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 15px 15px 20px;
+            border-collapse: collapse;
+        }
+        th,td{
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:hover {background-color: #d6d7ee;}
+        caption{
+            font-family: sens-serif;
+            font-size: 8mm;
+            padding-bottom: 2mm;
+            text-shadow: 3px 3px 5px;
+            color: #3a0c80;
+            text-decoration: underline black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Hoverable Table</caption>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+</body>
+</html>
