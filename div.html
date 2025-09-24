@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div</title>
+    <style>
+        .flex_Horizontal{
+            display: flex;
+        }
+        .flex_Horizontal > div {
+            width: 33%;
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0px;
+            margin: 10px 0 0 0;
+            gap: 0px;
+                        
+        }
+        li {
+            padding: 10px 30px 10px;
+            background-color: rgb(245, 245, 245);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        li:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.605);">
+    
+    <div class="flex_Horizontal">
+        <div style="background-color: rgba(126, 249, 126, 0.498);text-align: center;">
+            <h2>Rasht</h2>
+            <p>shahri ba ab o havaye barani</p>
+            <p>tabiiat besiar ziba</p>
+        </div>
+        <div style="background-color: rgba(224, 224, 224, 0.942);text-align: center;">
+            <h2>Tehran</h2>
+            <p>paytakht Iran</p>
+            <p>besiar shologh va alode</p>
+        </div>
+        <div style="background-color: rgba(249, 182, 182, 0.507);text-align: center;">
+            <h2>Ahwaz</h2>
+            <p>shahri besiar garm o martob</p>
+            <p>ba mardomi khongarm va mehman navaz</p>
+        </div>
+
+    </div>
+
+    <ul>
+        <li>Rasht</li>
+        <li>Tehran</li>
+        <li>Ahwaz</li>
+    </ul>
+</body>
+</html>
