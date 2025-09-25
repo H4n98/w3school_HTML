@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid example</title>
+    <style>
+        .grid_container {
+            display: grid;
+            /* grid-template-columns: 20% 20% 20%; */
+            grid-template-columns:repeat(3,1fr);
+            /* column-gap: 10px; */
+            row-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+        <div style="background-color: rgba(255, 0, 0, 0.687);padding: 20px;">Lorem ipsum dolor sit.</div>
+        <div style="background-color: rgba(0, 0, 255, 0.704);padding: 20px;">Lorem ipsum dolor sit.</div>
+        <div style="background-color: rgba(0, 128, 0, 0.704);padding: 20px;">Lorem ipsum dolor sit.</div>
+        tesst
+    </div>
+
+</body>
+</html>
