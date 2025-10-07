@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js training</title>
+    <style>
+        body {
+            margin-left: 30%;
+            margin-top: 30%;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h2>this is a js test</h2>
+    <button type="button" onclick="myfunction()">press here</button>
+    <p id="demo">salam</p>
+    <script>
+        function myfunction(){
+        document.getElementById("demo").innerHTML = "bye";
+        }
+    </script>
+
+    <p id="pstyle">we can change styles with js</p>
+    <script>
+        document.getElementById("pstyle").style.fontSize = "20px";
+        document.getElementById("pstyle").style.color = "red";
+        document.getElementById("pstyle").style.backgroundColor = "blue";
+    </script>
+</body>
+</html>
